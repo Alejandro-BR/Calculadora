@@ -1,15 +1,60 @@
+<!-- Alejandro Barrionuevo Rosado -->
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS de Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Scripts de Bootstrap (jQuery requerido) -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+  <script src="/js/calculadora.js" defer></script>
+
   <title>Calculadora</title>
 </head>
+
 <body>
   <header>
     <h1>CALCULADORA</h1>
   </header>
-  <section></section>
+  <nav></nav>
+  <section>
+    <div id="calculadora">
+      <input type="text" id="display" disabled>
+      <div class="buttons">
+        <!-- Número y operadores básicos -->
+        <button class="btn" value="7" onclick="valores(this.value)">7</button>
+        <button class="btn" value="8" onclick="valores(this.value)">8</button>
+        <button class="btn" value="9" onclick="valores(this.value)">9</button>
+        <button class="btn" value="/" onclick="valores(this.value)">/</button>
+        <button class="btn" value="4" onclick="valores(this.value)">4</button>
+        <button class="btn" value="5" onclick="valores(this.value)">5</button>
+        <button class="btn" value="6" onclick="valores(this.value)">6</button>
+        <button class="btn" value="*" onclick="valores(this.value)">*</button>
+        <button class="btn" value="1" onclick="valores(this.value)">1</button>
+        <button class="btn" value="2" onclick="valores(this.value)">2</button>
+        <button class="btn" value="3" onclick="valores(this.value)">3</button>
+        <button class="btn" value="-" onclick="valores(this.value)">-</button>
+        <button class="btn" value="0" onclick="valores(this.value)">0</button>
+        <button class="btn" value="." onclick="valores(this.value)">.</button>
+        <button class="btn" value="=" onclick="calcular()">=</button>
+        <button class="btn" value="+" onclick="valores(this.value)">+</button>
+        <button class="btn" value="C" onclick="limpiar()">C</button>
+
+        <!-- Botones científicos adicionales -->
+        <button class="btn" value="Math.PI" onclick="valores(this.value)">π</button>
+        <button class="btn" value="Math.E" onclick="valores(this.value)">e</button>
+        <button class="btn" value="(" onclick="valores(this.value)">(</button>
+        <button class="btn" value=")" onclick="valores(this.value)">)</button>
+      </div>
+    </div>
+  </section>
   <footer></footer>
 </body>
+
 </html>
