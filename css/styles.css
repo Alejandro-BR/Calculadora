@@ -34,7 +34,7 @@ section {
 }
 
 #calculadora {
-  width: 300px; /* Ancho fijo para la calculadora */
+  width: 300px; /* Ancho fijo para la calculadora en dispositivos grandes */
   max-width: 100%; /* Máximo ancho del contenedor */
   padding: 10px;
   border-radius: 10px;
@@ -65,7 +65,7 @@ section {
 }
 
 .btn {
-  width: 50px; /* Ancho de los botones */
+  width: 50px; /* Ancho de los botones en dispositivos grandes */
   height: 50px; /* Alto de los botones */
   font-size: 1.2rem;
   text-align: center;
@@ -81,10 +81,18 @@ section {
   background-color: #f5f5f5; /* Cambio de color al pasar el mouse */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .btn {
-    width: 40px; /* Reducir tamaño de los botones en dispositivos pequeños */
+    width: 40px; /* Reducir tamaño de los botones en dispositivos medianos */
     height: 40px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    width: calc(25% - 10px); /* Ancho para 4 columnas en dispositivos pequeños */
+    max-width: 50px; /* Máximo ancho de cada botón */
+    margin: 5px;
   }
 }
