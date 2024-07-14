@@ -1,0 +1,99 @@
+/* Alejandro Barrionuevo Rosado */ 
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #dfedfb;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: var(--bs-font-sans-serif);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+  flex-shrink: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Estilos para la calculadora */
+
+#calculadora {
+  width: 300px; /* Ancho fijo de la calculadora */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco para la calculadora */
+  border: 1px solid #ccc; /* Borde delgado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto visual */
+}
+
+#display {
+  width: calc(100% - 20px); /* Ancho del display ajustado */
+  margin-bottom: 10px; /* Espacio inferior entre el display y los botones */
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual ancho */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.btn {
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  #calculadora {
+    width: 100%; /* Calculadora ocupa todo el ancho disponible */
+    max-width: 400px; /* Ancho máximo para mantenerla legible */
+  }
+
+  #display {
+    font-size: 18px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+  }
+
+  .buttons {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de cuatro en móviles */
+  }
+}
+

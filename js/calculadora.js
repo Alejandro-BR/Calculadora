@@ -3,17 +3,25 @@
 const D = "display";
 
 /**
- * Agrega el valor indicado al campo de operacion del display.
+ * Pone en la operacion el valor
+ * indicado.
  * 
- * @param {*} valor - El valor que se va a agregar al display.
+ * @param {*} valor 
  */
 function valores(valor) {
   let display = document.getElementById(D);
-  display.value += valor;
+
+  if (valor === "Math.PI") {
+    display.value += "π";
+  } else if (valor === "Math.E") {
+    display.value += "e";
+  } else {
+    display.value += valor;
+  }
 }
 
 /**
- * Limpia el contenido del display.
+ * Limpia la salida.
  */
 function limpiar() {
   let display = document.getElementById(D);
@@ -21,23 +29,41 @@ function limpiar() {
 }
 
 /**
- * Evalua la expresion matematica en el display y muestra el resultado.
- * Si hay un error en la evaluacion, muestra "Error" y un mensaje de error.
+ * Calcula el resultado.
  */
 function calcular() {
   let display = document.getElementById(D);
+  let entrada = display.value;
+
+  entrada = entrada.replace(/π/g, "Math.PI");
+  entrada = entrada.replace(/e/g, "Math.E");
+
   try {
-    display.value = eval(display.value);
+    display.value = eval(entrada);
   } catch (error) {
     display.value = "Error";
-    mensajeError("Error numerico.");
+    mensajeError("Error numérico.");
   }
 }
 
 /**
- * Elimina el ultimo caracter del display.
+ * Borra el ultimo digito.
  */
 function borrar() {
   let display = document.getElementById(D);
   display.value = display.value.slice(0, -1);
+}
+
+/**
+ * Funcion que copia la salida.
+ */
+function copiarSalida() {
+  let salida = document.getElementById(D).value;
+
+  // Utilizar el Clipboard API para copiar al portapapeles
+  navigator.clipboard.writeText(salida).then(function () {
+    mensaje("Salida copiada: " + salida);
+  }).catch(function (err) {
+    mensajeError("Error al copiar al portapapeles.");
+  });
 }
