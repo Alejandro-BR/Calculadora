@@ -4,9 +4,8 @@
  * Genera un mensaje de error.
  * @param {string} m - El mensaje de error a mostrar.
  */
-function error(m) {
+function mensajeError(m) {
   console.error(m);
-  alert(m);
 }
 
 /**
