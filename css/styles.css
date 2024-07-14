@@ -1,4 +1,4 @@
-/* Alejandro Barrionuevo Rosado */ 
+/* Alejandro Barrionuevo Rosado */
 
 html {
   position: relative;
@@ -6,11 +6,10 @@ html {
 }
 
 body {
-  background-color: #dfedfb;
   background-size: cover;
-  background-position: center;
+  background-color: #dfedfb;
   background-repeat: no-repeat;
-  font-family: var(--bs-font-sans-serif);
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -30,70 +29,62 @@ section {
   margin: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex: 1;
 }
-
-footer {
-  background-color: #007bff;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: large;
-  flex-shrink: 0;
-}
-
-h1 {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-/* Estilos para la calculadora */
 
 #calculadora {
-  width: 300px; /* Ancho fijo de la calculadora */
-  margin: 0 auto; /* Centrado horizontal */
-  padding: 20px;
-  background-color: #fff; /* Fondo blanco para la calculadora */
-  border: 1px solid #ccc; /* Borde delgado */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto visual */
+  width: 300px; /* Ancho fijo para la calculadora */
+  max-width: 100%; /* Máximo ancho del contenedor */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Espacio inferior */
 }
 
 #display {
-  width: calc(100% - 20px); /* Ancho del display ajustado */
-  margin-bottom: 10px; /* Espacio inferior entre el display y los botones */
-  padding: 10px;
-  font-size: 24px;
+  width: calc(100% - 20px); /* Ancho igual al de la calculadora menos el padding */
+  height: 50px; /* Altura óptima para el display */
+  font-size: 1.5rem;
   text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Espacio inferior */
+  padding: 10px;
+  box-sizing: border-box; /* Incluir padding en el cálculo del ancho */
+  display: block; /* Convertir en bloque para centrar */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
 }
 
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual ancho */
-  gap: 10px; /* Espacio entre los botones */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
-  padding: 15px;
-  font-size: 18px;
+  width: 50px; /* Ancho de los botones */
+  height: 50px; /* Alto de los botones */
+  font-size: 1.2rem;
   text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #ffffff;
   cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease; /* Transición suave */
 }
 
-/* Ajuste para dispositivos móviles */
-@media (max-width: 768px) {
-  #calculadora {
-    width: 100%; /* Calculadora ocupa todo el ancho disponible */
-    max-width: 400px; /* Ancho máximo para mantenerla legible */
-  }
-
-  #display {
-    font-size: 18px; /* Tamaño de fuente más pequeño para dispositivos móviles */
-  }
-
-  .buttons {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de cuatro en móviles */
-  }
+.btn:hover {
+  background-color: #f5f5f5; /* Cambio de color al pasar el mouse */
 }
 
+@media (max-width: 500px) {
+  .btn {
+    width: 40px; /* Reducir tamaño de los botones en dispositivos pequeños */
+    height: 40px;
+    font-size: 1rem;
+  }
+}
