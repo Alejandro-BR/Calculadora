@@ -64,7 +64,7 @@ footer {
   margin-left: 15px; /* Ajusta el espacio entre el nombre y el logo de GitHub */
 }
 
-#calculadora {
+#calculadora, #formula {
   width: 300px; /* Ancho fijo para la calculadora en dispositivos grandes */
   max-width: 100%; /* Máximo ancho del contenedor */
   padding: 10px;
@@ -74,12 +74,28 @@ footer {
   margin-bottom: 20px; /* Espacio inferior */
 }
 
-#display {
+/* #display, #displayFormula */
+.displays {
   width: calc(100% - 20px); /* Ancho igual al de la calculadora menos el padding */
   height: 50px; /* Altura óptima para el display */
   font-size: 1.5rem;
   text-align: right;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Espacio inferior */
+  padding: 10px;
+  box-sizing: border-box; /* Incluir padding en el cálculo del ancho */
+  display: block; /* Convertir en bloque para centrar */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+}
+
+#recuadroEntrada {
+  width: calc(100% - 20px); /* Ancho igual al de la calculadora menos el padding */
+  height: 50px; /* Altura óptima para el display */
+  font-size: 1.5rem;
+  text-align: right;
+  border: 1px solid #039af8;
   border-radius: 5px;
   margin-bottom: 10px; /* Espacio inferior */
   padding: 10px;

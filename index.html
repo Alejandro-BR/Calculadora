@@ -18,6 +18,7 @@
   <script src="/js/calculadora.js" defer></script>
   <script src="/js/copiar.js" defer></script>
   <script src="/js/mensajes.js" defer></script>
+  <script src="/js/formula.js" defer></script>
 
   <title>Calculadora</title>
   <link rel="icon" type="image/x-icon" href="/resource/img/icono.png">
@@ -30,7 +31,7 @@
   <nav></nav>
   <section>
     <div id="calculadora">
-      <input type="text" id="display" disabled>
+      <input type="text" id="display" class="displays"  disabled>
       <div class="buttons">
 
         <button class="btn" value="7" onclick="valores(this.value)">7</button>
@@ -61,6 +62,23 @@
         <button class="btn" value="C" onclick="limpiar()">C</button>
         <button class="btn" onclick="borrar()">
           <i class="bi bi-backspace"></i>
+        </button>
+        <button class="btn" onclick="copiarSalida()">
+          <i class="bi bi-copy"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="formula">
+      <p>Escribe una formula matemática, por ejemplo: (2+3)*10</p>
+      <input type="text" id="recuadroEntrada" name="recuadro">
+      <input type="text" id="displayFormula" class="displays"  disabled>
+      <div class="buttons">
+        <button class="btn" value="=" onclick="calcularFormula()">
+          <i class="bi bi-calculator"></i>
+        </button>
+        <button class="btn" value="C" onclick="limpiarFormula()">
+          <i class="bi bi-trash3"></i>
         </button>
         <button class="btn" onclick="copiarSalida()">
           <i class="bi bi-copy"></i>
