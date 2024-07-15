@@ -33,6 +33,37 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+  flex-shrink: 0;
+}
+
+.footer-btn {
+  margin-top: 10px;
+}
+
+.footer-btn:hover {
+  background-color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.footer-container p {
+  margin-bottom: 0; /* Elimina el margen inferior del párrafo */
+}
+
+.footer-container .github-logo {
+  margin-left: 15px; /* Ajusta el espacio entre el nombre y el logo de GitHub */
+}
+
 #calculadora {
   width: 300px; /* Ancho fijo para la calculadora en dispositivos grandes */
   max-width: 100%; /* Máximo ancho del contenedor */
