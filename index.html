@@ -1,5 +1,4 @@
 <!-- Alejandro Barrionuevo Rosado -->
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -31,62 +30,56 @@
   <nav></nav>
   <section>
     <div id="calculadora">
-      <input type="text" id="display" class="displays"  disabled>
+      <input type="text" id="display" class="displays" disabled>
       <div class="buttons">
-
         <button class="btn" value="7" onclick="valores(this.value)">7</button>
         <button class="btn" value="8" onclick="valores(this.value)">8</button>
         <button class="btn" value="9" onclick="valores(this.value)">9</button>
         <button class="btn" value="/" onclick="valores(this.value)">/</button>
-
         <button class="btn" value="4" onclick="valores(this.value)">4</button>
         <button class="btn" value="5" onclick="valores(this.value)">5</button>
         <button class="btn" value="6" onclick="valores(this.value)">6</button>
         <button class="btn" value="*" onclick="valores(this.value)">*</button>
-
         <button class="btn" value="1" onclick="valores(this.value)">1</button>
         <button class="btn" value="2" onclick="valores(this.value)">2</button>
         <button class="btn" value="3" onclick="valores(this.value)">3</button>
         <button class="btn" value="-" onclick="valores(this.value)">-</button>
-
         <button class="btn" value="0" onclick="valores(this.value)">0</button>
         <button class="btn" value="." onclick="valores(this.value)">.</button>
         <button class="btn" value="=" onclick="calcular()">=</button>
         <button class="btn" value="+" onclick="valores(this.value)">+</button>
-
         <button class="btn" value="Math.PI" onclick="valores(this.value)">π</button>
         <button class="btn" value="Math.E" onclick="valores(this.value)">e</button>
         <button class="btn" value="(" onclick="valores(this.value)">(</button>
         <button class="btn" value=")" onclick="valores(this.value)">)</button>
-
         <button class="btn" value="C" onclick="limpiar()">C</button>
         <button class="btn" onclick="borrar()">
           <i class="bi bi-backspace"></i>
         </button>
-        <button class="btn" onclick="copiarSalida()">
-          <i class="bi bi-copy"></i>
-        </button>
-      </div>
-    </div>  
-
-    <div id="formula">
-      <h2 class="text-center">ESCRIBE UNA FORMULA</h2>
-      <br> <br>
-      <input type="text" id="recuadroEntrada" name="recuadro">
-      <input type="text" id="displayFormula" class="displays"  disabled>
-      <div class="buttons">
-        <button class="btn" value="=" onclick="calcularFormula()">
-          <i class="bi bi-calculator"></i>
-        </button>
-        <button class="btn" value="C" onclick="limpiarFormula()">
-          <i class="bi bi-trash3"></i>
-        </button>
-        <button class="btn" onclick="copiarSalida()">
+        <button class="btn" onclick="copiarSalida('display')" type="button">
           <i class="bi bi-copy"></i>
         </button>
       </div>
     </div>
 
+    <div id="formula">
+      <form name="formula">
+        <p class="text-center">Escribe una fórmula matemática.</p>
+        <input type="text" id="recuadroEntrada" name="recuadro">
+        <input type="text" id="displayFormula" class="displays" disabled>
+        <div class="buttons">
+          <button class="btn" value="=" onclick="calcularFormula()" type="button">
+            <i class="bi bi-calculator"></i>
+          </button>
+          <button class="btn" value="C" onclick="limpiarFormula()" type="button">
+            <i class="bi bi-trash3"></i>
+          </button>
+          <button class="btn" onclick="copiarSalida('displayFormula')" type="button">
+            <i class="bi bi-copy"></i>
+          </button>
+        </div>
+      </form>
+    </div>
   </section>
   <footer class="text-white p-4 text-center">
     <div class="footer-container">
@@ -96,7 +89,6 @@
       </a>
     </div>
   </footer>
-
 </body>
 
 </html>

@@ -2,9 +2,11 @@
 
 /**
  * Funcion que copia la salida.
+ *
+ * @param {string} elementoId - El ID del elemento a copiar.
  */
-function copiarSalida() {
-  let display = document.getElementById("display");
+function copiarSalida(elementoId) {
+  let display = document.getElementById(elementoId);
   let salida = display.value;
 
   if (salida) {
