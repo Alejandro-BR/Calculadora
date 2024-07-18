@@ -1,4 +1,4 @@
-/* Alejandro Barrionuevo Rosado */
+/* Ajustes generales y estilos */
 
 html {
   position: relative;
@@ -26,11 +26,17 @@ header {
 }
 
 section {
+  display: flex; /* Utiliza Flexbox para alinear elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas nuevas si no caben en una sola fila */
+  gap: 20px; /* Espacio entre los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos en el contenedor */
+  align-items: flex-start; /* Alinea los elementos al principio verticalmente */
   margin: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Permite que la sección crezca y ocupe el espacio disponible */
 }
 
 footer {
@@ -65,7 +71,7 @@ footer {
 }
 
 #calculadora, #formula {
-  width: 300px; /* Ancho fijo para la calculadora en dispositivos grandes */
+  width: 300px; /* Mantén el ancho fijo para la calculadora y la fórmula */
   max-width: 100%; /* Máximo ancho del contenedor */
   padding: 10px;
   border-radius: 10px;
@@ -74,7 +80,6 @@ footer {
   margin-bottom: 20px; /* Espacio inferior */
 }
 
-/* #display, #displayFormula */
 .displays {
   width: calc(100% - 20px); /* Ancho igual al de la calculadora menos el padding */
   height: 50px; /* Altura óptima para el display */
