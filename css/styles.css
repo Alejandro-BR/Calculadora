@@ -11,6 +11,7 @@ html {
 body {
   background-size: cover;
   background-color: #dfedfb;
+  background-image: url('../resource/img/fondo.jpg');
   background-repeat: no-repeat;
   font-family: 'Rubik', sans-serif;
   margin: 0;
