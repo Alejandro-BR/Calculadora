@@ -27,5 +27,5 @@ function limpiarFormula() {
   let display = document.getElementById(DF);
   let entrada = document.getElementById(R);
   display.value = "";
-  entrada.value = ""; // Asegúrate de limpiar también la entrada
+  entrada.value = ""; 
 }

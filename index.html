@@ -18,6 +18,7 @@
   <script src="/js/copiar.js" defer></script>
   <script src="/js/mensajes.js" defer></script>
   <script src="/js/formula.js" defer></script>
+  <script src="/js/conversor.js" defer></script>
 
   <title>Calculadora</title>
   <link rel="icon" type="image/x-icon" href="/resource/img/icono.png">
@@ -68,7 +69,7 @@
         <input type="text" id="recuadroEntrada" name="recuadro">
         <input type="text" id="displayFormula" class="displays" disabled>
         <div class="buttons">
-          <button class="btn" value="=" onclick="calcularFormula()" type="button">
+          <button class="btn" value="=" onclick="calcularConversor()" type="button">
             <i class="bi bi-calculator"></i>
           </button>
           <button class="btn" value="C" onclick="limpiarFormula()" type="button">
@@ -103,7 +104,7 @@
         <button class="btn" value="=" onclick="calcularFormula()" type="button">
           <i class="bi bi-calculator"></i>
         </button>
-        <button class="btn" value="C" onclick="limpiarFormula()" type="button">
+        <button class="btn" value="C" onclick="limpiarConversor()" type="button">
           <i class="bi bi-trash3"></i>
         </button>
         <button class="btn" onclick="copiarSalida('displayConversor')" type="button">
