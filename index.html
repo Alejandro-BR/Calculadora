@@ -83,13 +83,14 @@
 
     <div id="binario">
       <form name="binario"></form>
-      <label for="base">Elige una base:</label>
+      <label for="baseEntrada">Elige una base:</label>
       <select id="baseEntrada" name="baseEntrada">
         <option value="decimal">Decimal</option>
         <option value="binario">Binario</option>
         <option value="octal">Octal</option>
         <option value="hexadecimal">Hexadecimal</option>
       </select>
+      <label for="baseSalida">Elige una base:</label>
       <select id="baseSalida" name="baseSalida">
         <option value="decimal">Decimal</option>
         <option value="binario">Binario</option>
@@ -98,7 +99,17 @@
       </select>
       <input type="text" id="sistemaEntrada" name="recuadro">
       <input type="text" id="sistemaSalida" class="displays" disabled>
-    </div>
+      <div class="buttons">
+        <button class="btn" value="=" onclick="calcularFormula()" type="button">
+          <i class="bi bi-calculator"></i>
+        </button>
+        <button class="btn" value="C" onclick="limpiarFormula()" type="button">
+          <i class="bi bi-trash3"></i>
+        </button>
+        <button class="btn" onclick="copiarSalida('displayFormula')" type="button">
+          <i class="bi bi-copy"></i>
+        </button>
+      </div>
 
   </section>
   <footer class="text-white p-4 text-center">

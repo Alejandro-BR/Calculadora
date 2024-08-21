@@ -74,7 +74,7 @@ footer {
   margin-left: 15px; /* Ajusta el espacio entre el nombre y el logo de GitHub */
 }
 
-#calculadora, #formula {
+#calculadora, #formula, #binario {
   width: 300px; /* Mantén el ancho fijo para la calculadora y la fórmula */
   max-width: 100%; /* Máximo ancho del contenedor */
   padding: 10px;
@@ -99,7 +99,7 @@ footer {
   margin-right: auto; /* Centrar horizontalmente */
 }
 
-#recuadroEntrada {
+#recuadroEntrada, #sistemaEntrada {
   width: calc(100% - 20px); /* Ancho igual al de la calculadora menos el padding */
   height: 50px; /* Altura óptima para el display */
   font-size: 1.5rem;
