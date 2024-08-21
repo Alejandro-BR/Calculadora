@@ -99,7 +99,7 @@ footer {
   margin-right: auto; /* Centrar horizontalmente */
 }
 
-#recuadroEntrada, #sistemaEntrada {
+#recuadroEntrada, #recuadroConversor {
   width: calc(100% - 20px); /* Ancho igual al de la calculadora menos el padding */
   height: 50px; /* Altura óptima para el display */
   font-size: 1.5rem;

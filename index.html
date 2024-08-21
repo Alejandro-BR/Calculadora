@@ -97,8 +97,8 @@
         <option value="octal">Octal</option>
         <option value="hexadecimal">Hexadecimal</option>
       </select>
-      <input type="text" id="sistemaEntrada" name="recuadro">
-      <input type="text" id="sistemaSalida" class="displays" disabled>
+      <input type="text" id="recuadroConversor" name="recuadro">
+      <input type="text" id="displayConversor" class="displays" disabled>
       <div class="buttons">
         <button class="btn" value="=" onclick="calcularFormula()" type="button">
           <i class="bi bi-calculator"></i>
@@ -106,7 +106,7 @@
         <button class="btn" value="C" onclick="limpiarFormula()" type="button">
           <i class="bi bi-trash3"></i>
         </button>
-        <button class="btn" onclick="copiarSalida('displayFormula')" type="button">
+        <button class="btn" onclick="copiarSalida('displayConversor')" type="button">
           <i class="bi bi-copy"></i>
         </button>
       </div>
