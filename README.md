@@ -8,6 +8,8 @@ Bienvenido a esta página web de calculadoras matemáticas, diseñada para facil
 
 - Calculadora de Fórmulas: Permite evaluar fórmulas matemáticas complejas.
 
+- Conversor de Sistemas Numéricos: Convierte números entre sistemas numéricos (Decimal, Binario, Octal, Hexadecimal)
+
 Próximamente, añadire herramientas para conversiones entre sistemas numéricos como binario y hexadecimal, entre otras funciones.
 
 Todas las calculadoras son totalmente responsivas, garantizando un rendimiento óptimo en cualquier dispositivo, ya sea móvil, tableta o computadora de escritorio.
