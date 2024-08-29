@@ -22,7 +22,6 @@ body {
 }
 
 header {
-  /* background-color: #007bff; */
   /* background-color: #312F30; */
   background-color: rgba(49, 47, 48, 0.9);
   color: white;
@@ -46,7 +45,6 @@ section {
 }
 
 footer {
-  /* background-color: #007bff; */
   /* background-color: #312F30; */
   background-color: rgba(49, 47, 48, 0.9);
   color: white;
