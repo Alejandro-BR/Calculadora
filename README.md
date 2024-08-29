@@ -10,9 +10,7 @@ Bienvenido a esta página web de calculadoras matemáticas, diseñada para facil
 
 - Conversor de Sistemas Numéricos: Convierte números entre sistemas numéricos (Decimal, Binario, Octal, Hexadecimal)
 
-Próximamente, añadire herramientas para conversiones entre sistemas numéricos como binario y hexadecimal, entre otras funciones.
-
-Todas las calculadoras son totalmente responsivas, garantizando un rendimiento óptimo en cualquier dispositivo, ya sea móvil, tableta o computadora de escritorio.
+Todas las calculadoras son totalmente responsivas, garantizando un rendimiento óptimo en cualquier dispositivo, ya sea móvil, tablet o ordenadores.
 
 > [!IMPORTANT]
 > En proceso de desarrollo...
@@ -22,20 +20,21 @@ Todas las calculadoras son totalmente responsivas, garantizando un rendimiento �
 
 ## Indice
 
-<!-- - [Demo](#demo) -->
+- [Demo](#demo)
+
 - [Tecnologías](#tecnologías)
 <!-- - [Uso](#Uso) -->
 - [Créditos](#Créditos)
 
 <br>
 
-<!-- ## Demo -->
+## Demo
 
-<!-- [Enlace a la Demo.](https://minecraft-coordenadas.netlify.app/)
+[Enlace a la Demo.](https://calculadoras-y-herramientas.netlify.app/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1f9f9cda-e3e9-4f10-9be7-7ef46f51d2b0/deploy-status)](https://app.netlify.com/sites/minecraft-coordenadas/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/30ee345f-e0ff-4360-939e-1329c466145e/deploy-status)](https://app.netlify.com/sites/calculadoras-y-herramientas/deploys)
 
-![Captura de pantalla](/img/captura_pc.png)
+<!-- ![Captura de pantalla](/img/captura_pc.png)
 
 ![Captura de pantalla](/img/captura_pc_nether.png)
 
@@ -44,7 +43,7 @@ Capturas de pantalla en su versión para movil:
 - [Captura de pantalla 1.](/img/captura_movil1.jpg)
 - [Captura de pantalla 2.](/img/captura_movil2.jpg)
 - [Captura de pantalla 3.](/img/captura_movil3.jpg)
-- [Captura de pantalla 4.](/img/captura_movil4.jpg) -->
+- [Captura de pantalla 4.](/img/captura_movil4.jpg) --> 
 
 <br>
 
