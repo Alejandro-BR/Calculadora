@@ -65,7 +65,8 @@
 
     <div id="formula">
       <form name="formula">
-        <p class="text-center">Escribe una fórmula matemática.</p>
+        <h4 class="text-center">Calculadora de fórmulas</h4>
+        <br>
         <input type="text" id="recuadroEntrada" name="recuadro">
         <input type="text" id="displayFormula" class="displays" disabled>
         <div class="buttons">
@@ -84,20 +85,23 @@
 
     <div id="binario">
       <form name="binario"></form>
-      <label for="baseEntrada">Elige una base:</label>
+      <h4 class="text-center">Conversor</h4>
+      <br>
+      <label for="baseEntrada">Base entrada: &nbsp; </label>
       <select id="baseEntrada" name="baseEntrada">
         <option value="decimal">Decimal</option>
         <option value="binario">Binario</option>
         <option value="octal">Octal</option>
         <option value="hexadecimal">Hexadecimal</option>
       </select>
-      <label for="baseSalida">Elige una base:</label>
+      <label for="baseSalida">Base salida: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
       <select id="baseSalida" name="baseSalida">
         <option value="binario">Binario</option>
         <option value="octal">Octal</option>
         <option value="hexadecimal">Hexadecimal</option>
         <option value="decimal">Decimal</option>
       </select>
+      <br><br>
       <input type="text" id="recuadroConversor" name="recuadro">
       <input type="text" id="displayConversor" class="displays" disabled>
       <div class="buttons">
